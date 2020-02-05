@@ -10,6 +10,8 @@ flask = "*"
 gunicorn = "*"
 joblib = "*"
 scikit-learn = "*"
+json = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.7"
