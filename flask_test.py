@@ -3,10 +3,11 @@ from flask import Flask
 from sklearn.externals import joblib 
 
 model = joblib.load('nn100.joblib')
+print('joblib loaded')
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods =['GET'])
 
 
 def home():
