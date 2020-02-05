@@ -10,7 +10,6 @@ flask = "*"
 gunicorn = "*"
 joblib = "*"
 scikit-learn = "*"
-json = "*"
 pandas = "*"
 
 [requires]
