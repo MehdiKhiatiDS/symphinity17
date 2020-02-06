@@ -1,4 +1,5 @@
 from flask import Flask, json
+from flask_cors import CORS
 import pandas as pd
 from sklearn.externals import joblib 
 from sklearn.neighbors import NearestNeighbors
@@ -7,6 +8,7 @@ from sklearn.neighbors import NearestNeighbors
 
 def make_app():
     app = Flask(__name__)
+    cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
     @app.route('/id/<int:post_id>')
 
     def home(post_id):
